@@ -12,14 +12,14 @@ import {useState} from "react";
 function App() {
   const [total, setTotal] = useState(0);
 
-  const sumaTotal = () => {
+  const handlerSumaTotal = () => {
     setTotal(total+1);
   }
 
   return (
     <div className="App">
       <Cabecera totalProductos ={total}/>
-      <Listado contador = {sumaTotal}/>
+      <Listado handlerSumaTotal = {handlerSumaTotal}/>
     </div>
   );
 }
